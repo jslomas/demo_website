@@ -2,19 +2,13 @@
 title: "Untitled"
 author: "John Lomas"
 date: "January 4, 2018"
-output: 
-  html_document: 
-    theme: flatly
-
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{bash}
-
-```
 # Interactive Plot
 
 First let's make a ggplot of cars
@@ -32,6 +26,11 @@ ggplotly(
   ggplot(data = cars, aes(x=speed, y=dist, color = speed))+ geom_line()+ geom_point(alpha = .5)
 )
 ```
+
+```{r}
+persp(volcano, expand=.2)
+```
+
 
 - *eval= FALSE* is to show code but not run code
 - *echo=FALSE* is to run code but not display

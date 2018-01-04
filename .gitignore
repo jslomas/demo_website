@@ -2,3 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
+.DS_Store #on mac this is a hidden file, ignore it
